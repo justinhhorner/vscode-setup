@@ -1,7 +1,7 @@
 # Visual Studio Code Setup
 ![Settings Preview](./preview.png)
 
-A backup of my Visual Studio Code [settings](./settings.json) and [keyboard shortcuts](./keybindings.json) to easily share with others, and for myself in case sync fails 🙃
+A backup of my Visual Studio Code [settings](./settings.json) and keyboard bindings ([Windows](./keybindings/windows/keybindings.json), [macOS](./keybindings/macos/keybindings.json)) to easily share with others, and for myself in case sync fails 🙃
 
 # Theme Extensions
 ### Theme
