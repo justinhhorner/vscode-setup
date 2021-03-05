@@ -1,8 +1,4 @@
-// Place your key bindings in this file to override the defaults
 [
-    /**
-    * Panels
-    **/
     {
         "key": "cmd+k cmd+e",
         "command": "workbench.view.explorer"
@@ -32,31 +28,6 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
 
-    /**
-    * Toggle Font Size
-    **/
-    {
-        "key": "cmd+k cmd+k",
-        "command": "toggle",
-        "when": "editorTextFocus",
-        "args": {
-            "id": "fontSize",
-            "value": [
-                {
-                    "editor.fontSize": 18,
-                    "editor.lineHeight": 45
-                },
-                {
-                    "editor.fontSize": 14,
-                    "editor.lineHeight": 0
-                }
-            ]
-        }
-    },
-
-    /**
-    * Fold/Unfold
-    **/
     {
         "key": "shift+cmd+[",
         "command": "editor.fold",
@@ -68,24 +39,6 @@
         "when": "editorFocus"
     },
 
-
-    /**
-    * Line Manipulation
-    **/
-    {
-        "key": "cmd+l",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+j",
-        "command": "editor.action.joinLines",
-        "when": "editorTextFocus"
-    },
-
-    /**
-    * File Explorer
-    **/
     {
         "key": "cmd+d",
         "command": "duplicate.execute",
@@ -102,28 +55,6 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
 
-    /**
-    * Multi-Cursor
-    **/
-    {
-        "key": "cmd+backspace",
-        "command": "editor.action.moveSelectionToPreviousFindMatch",
-        "when": "editorFocus && editorHasMultipleSelections"
-    },
-    {
-        "key": "cmd+k cmd+d",
-        "command": "editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus && editorHasMultipleSelections"
-    },
-    {
-        "key": "cmd+right",
-        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorFocus && editorHasSelection"
-    },
-
-    /**
-    * Split Panels
-    **/
     {
         "key": "ctrl+w",
         "command": "workbench.action.joinAllGroups",
@@ -155,10 +86,6 @@
         "when": "editorFocus"
     },
 
-
-    /**
-    * Terminal Split Panel
-    **/
     {
         "key": "ctrl+n",
         "command": "workbench.action.terminal.split",
@@ -179,104 +106,12 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
-
-    /**
-    * Emmet
-    **/
-    {
-        "key": "cmd+m cmd+i",
-        "command": "editor.emmet.action.balanceIn",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+o",
-        "command": "editor.emmet.action.balanceOut",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+w",
-        "command": "editor.emmet.action.wrapWithAbbreviation",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+m",
-        "command": "editor.emmet.action.matchTag",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+e",
-        "command": "editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+r",
-        "command": "editor.emmet.action.updateTag",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+m cmd+backspace",
-        "command": "editor.emmet.action.removeTag",
-        "when": "editorTextFocus"
-    },
-
-    /**
-    * IntelliSense
-    **/
-    {
-        "key": "cmd+r",
-        "command": "workbench.action.gotoSymbol"
-    },
-    {
-        "key": "cmd+shift+r",
-        "command": "workbench.action.showAllSymbols"
-    },
-    {
-        "key": "cmd+k cmd+enter",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorTextFocus"
-    },
-	{
-        "key": "cmd+k cmd+i",
-        "command": "namespaceResolver.import"
-    },
-
-    /**
-    * Project Switching
-    **/
-    {
-        "key": "cmd+;",
-        "command": "workbench.action.switchWindow",
-        "when": "! config.simple-project-switcher.present"
-    },
-    {
-        "key": "alt+cmd+right",
-        "command": "workbench.action.showNextWindowTab"
-    },
-    {
-        "key": "alt+cmd+left",
-        "command": "workbench.action.showPreviousWindowTab"
-    },
-
-    /**
-    * Open DevTools
-    **/
-    {
-        "key": "alt+cmd+i",
-        "command": "workbench.action.toggleDevTools"
-    },
-
-    /**
-    * Terminal
-    **/
     {
         "key": "ctrl+l",
         "command": "workbench.action.terminal.clear",
         "when": "terminalFocus"
     },
 
-    /**
-    * Hide Toaster Notifications
-    **/
     {
         "key": "escape",
         "command": "notifications.hideToasts",

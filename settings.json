@@ -1,93 +1,41 @@
 {
-    /**
-    * Defaults
-    **/
-    "diffEditor.renderSideBySide": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "workbench.editor.enablePreview": false,
     "window.titleBarStyle": "custom",
-    "window.newWindowDimensions": "inherit",
     "zenMode.centerLayout": false,
     "extensions.ignoreRecommendations": true,
-    "extensions.showRecommendationsOnlyOnDemand": true,
-
-    /**
-    * Clean Workspace
-    */
-    "workbench.activityBar.visible": false,
-    "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false,
-    "editor.renderIndentGuides": false,
-    "editor.minimap.enabled": false,
-	"editor.lineNumbers": "on",
-
-    /**
-    * Silence The Noise
-    */
-    "breadcrumbs.enabled": false,
-    "scm.diffDecorations": "none",
-    "editor.hover.enabled": true,
-    "editor.matchBrackets": "never",
-    "workbench.tips.enabled": false,
-    "editor.colorDecorators": false,
-    "git.decorations.enabled": false,
-    "workbench.startupEditor": "none",
-    "editor.lightbulb.enabled": false,
-    "editor.selectionHighlight": false,
-    "editor.overviewRulerBorder": false,
-    "editor.renderLineHighlight": "none",
-    "editor.occurrencesHighlight": false,
-    "problems.decorations.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.gotoLocation.multipleReferences": "goto",
-    "editor.gotoLocation.multipleDefinitions": "goto",
-    "editor.gotoLocation.multipleDeclarations": "goto",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "editor.gotoLocation.multipleImplementations": "goto",
-    "editor.gotoLocation.multipleTypeDefinitions": "goto",
     "explorer.compactFolders": false,
+    "workbench.sideBar.location": "right",
+    "workbench.editor.showTabs": false,
+    "editor.renderIndentGuides": true,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "on",
+    "editor.lightbulb.enabled": true,
+    "editor.selectionHighlight": true,
+    "breadcrumbs.enabled": false,
 
-    /**
-    * Typography
-    **/
-    "editor.fontSize": 18,
-    "editor.lineHeight": 45,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 30,
     "editor.suggestFontSize": 16,
-    "editor.suggestLineHeight": 28,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'JetBrains Mono'",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.lineHeight": 1.5,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "'JetBrains Mono'",
 
-    /**
-    * Themes
-    **/
-    "workbench.colorTheme": "Moonlight II",
-    "workbench.iconTheme": "city-lights-icons-vsc-light",
-    "workbench.colorCustomizations": {
-        "[Moonlight II]": {
-            "titleBar.activeBackground": "#222436",
-            "titleBar.inactiveBackground": "#222436",
-            "titleBar.border": "#222436",
-            "contrastBorder": "#222436"
-            }
-        },
+    "workbench.colorTheme": "Tokyo Night",
 
-    /**
-    * Find
-    **/
-    "search.useIgnoreFiles": false,
     "search.exclude": {
         "**/node_modules": true,
         "**/dist": true,
@@ -95,16 +43,16 @@
         "storage": true
     },
 
-    /**
-    * Prettier
-    **/
     "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
-    "prettier.semi": true,
     "prettier.singleQuote": true,
-    "prettier.printWidth": 120,
+
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
+
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false
 }

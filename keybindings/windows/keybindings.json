@@ -1,7 +1,4 @@
 [
-    /**
-    * Panels
-    */
     {
         "key": "ctrl+k ctrl+e",
         "command": "workbench.view.explorer"
@@ -31,31 +28,6 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
 
-    /**
-    * Toggle Font Size
-    **/
-    {
-        "key": "ctrl+k ctrl+k",
-        "command": "toggle",
-        "when": "editorTextFocus",
-        "args": {
-            "id": "fontSize",
-            "value": [
-                {
-                    "editor.fontSize": 15,
-                    "editor.lineHeight": 45,
-                },
-                {
-                    "editor.fontSize": 12,
-                    "editor.lineHeight": 0,
-                }
-            ]
-        }
-    },
-
-    /**
-    * Fold/Unfold
-    **/
     {
         "key": "shift+ctrl+[",
         "command": "editor.fold",
@@ -67,23 +39,6 @@
         "when": "editorFocus"
     },
 
-    /**
-    * Line Manipulation
-    **/
-    {
-        "key": "ctrl+l",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "editor.action.joinLines",
-        "when": "editorTextFocus"
-    },
-
-    /**
-    * File Explorer
-    **/
     {
         "key": "ctrl+d",
         "command": "duplicate.execute",
@@ -100,28 +55,6 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
 
-    /**
-    * Multi-Cursor
-    **/
-    {
-        "key": "ctrl+backspace",
-        "command": "editor.action.moveSelectionToPreviousFindMatch",
-        "when": "editorFocus && editorHasMultipleSelections"
-    },
-    {
-        "key": "ctrl+k ctrl+d",
-        "command": "editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus && editorHasMultipleSelections"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorFocus && editorHasSelection"
-    },
-
-    /**
-    * Split Panels
-    **/
     {
         "key": "alt+w",
         "command": "workbench.action.joinAllGroups",
@@ -153,9 +86,6 @@
         "when": "editorFocus"
     },
 
-    /**
-    * Terminal Split Panel
-    **/
     {
         "key": "alt+n",
         "command": "workbench.action.terminal.split",
@@ -177,104 +107,6 @@
         "when": "terminalFocus"
     },
 
-    /**
-    * Emmet
-    **/
-    {
-        "key": "ctrl+m ctrl+i",
-        "command": "editor.emmet.action.balanceIn",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+o",
-        "command": "editor.emmet.action.balanceOut",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+w",
-        "command": "editor.emmet.action.wrapWithAbbreviation",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+m",
-        "command": "editor.emmet.action.matchTag",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+e",
-        "command": "editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+r",
-        "command": "editor.emmet.action.updateTag",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+m ctrl+backspace",
-        "command": "editor.emmet.action.removeTag",
-        "when": "editorTextFocus"
-    },
-
-    /**
-    * IntelliSense
-    **/
-    {
-        "key": "ctrl+r",
-        "command": "workbench.action.gotoSymbol",
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "workbench.action.showAllSymbols"
-    },
-    {
-        "key": "ctrl+k ctrl+enter",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "namespaceResolver.import"
-    },
-
-
-    /**
-    * Project Switching
-    **/
-    {
-        "key": "ctrl+;",
-        "command": "workbench.action.switchWindow",
-        "when": "! config.simple-project-switcher.present"
-    },
-    {
-        "key": "alt+ctrl+right",
-        "command": "workbench.action.showNextWindowTab"
-    },
-    {
-        "key": "alt+ctrl+left",
-        "command": "workbench.action.showPreviousWindowTab"
-    },
-
-    /**
-    * Open DevTools
-    **/
-    {
-        "key": "alt+ctrl+i",
-        "command": "workbench.action.toggleDevTools"
-    },
-
-    /**
-    * Terminal
-    **/
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.terminal.clear",
-        "when": "terminalFocus"
-    },
-
-    /**
-    * Hide Toaster Notifications
-    **/
     {
         "key": "escape",
         "command": "notifications.hideToasts",
